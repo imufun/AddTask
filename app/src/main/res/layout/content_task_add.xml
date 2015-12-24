@@ -9,22 +9,34 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.android.imran.addtask.Output"
-    tools:showIn="@layout/activity_output">
+    tools:context="com.android.imran.addtask.TaskAdd"
+    tools:showIn="@layout/activity_task_add">
 
 
-    <TextView
-        android:id="@+id/text"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_marginTop="60dp"
-        android:id="@+id/GoWish"
-        android:text="@string/Go"
+
+        <EditText
+            android:id="@+id/listEdit"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/AddTaskList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="50dp"
+        android:id="@+id/List"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"></ListView>
 
 </RelativeLayout>

@@ -23,6 +23,11 @@
             android:label="@string/title_activity_output"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity
+            android:name=".TaskAdd"
+            android:label="@string/title_activity_task_add"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

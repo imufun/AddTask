@@ -15,8 +15,6 @@ public class Output extends AppCompatActivity {
         setSupportActionBar(toolbar);
         TextView textView = (TextView) findViewById(R.id.text);
         textView.setText(" Welcome!!\n " + getIntent().getStringExtra("Name"));
-
-//        getIntent().getStringExtra("Name",);
     }
 
 }
